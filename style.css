@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #ff6f3c;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    
+}
+.new{
+    font-weight: bolder;
+    font-display:swap;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: url("background_image.webp") center/cover;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+
+
+.menu-section {
+    padding: 40px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    background: #fff3e0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    background: #ff6f3c;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.about {
+    padding: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.cart-page {
+    text-align: center;
+    padding: 40px;
+}
+
+.cart-box {
+    background: #fff3e0;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+footer {
+    text-align: center;
+    background: #333;
+    padding: 15px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
