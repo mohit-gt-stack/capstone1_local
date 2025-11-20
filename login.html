@@ -6,7 +6,7 @@
     <title>Locals - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color:lavender;">
 
 <header>
     <div class="logo">LOCALS</div>
@@ -18,21 +18,23 @@
         <a href="cart.html">Cart</a>
     </nav>
 </header>
+<h2 style="text-align: center;
+    
+   font-size: 50px; color: rgb(210, 30, 30); font-style: oblique;">Enter</h2><br><br>
 
-<section class="auth-section">
-    <h2>Login</h2>
-    <form class="auth-form">
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Login</button>
+<div class="login-container">
+    <form>
+      <label>Email</label><br>
+      <input type="email" placeholder="Enter your email" required /><br><br>
+
+      <label>Password</label><br>
+      <input type="password" placeholder="Enter your password" required /><br><br>
+
+      <button style="color: black;font-size: 30px;height: 65px;" type="submit">Login</button><br><br>
+      <p class="signup-text">Don't have an account? <a href="sign_up.html">Sign Up</a></p>
     </form>
 
-    <p class="auth-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
-</section>
 
-<footer>
-    <p>© 2025 LOCALS — Fresh Food Delivered</p>
-</footer>
 
 </body>
 </html>
