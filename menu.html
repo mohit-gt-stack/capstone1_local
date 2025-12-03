@@ -6,7 +6,7 @@
     <title>Locals - Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; justify-content: space-between; height: 100vh;">
 
 <header>
     <div class="logo">LOCALS</div>
@@ -21,45 +21,58 @@
     </nav>
 </header>
 
-<section class="menu-section">
+<section class="menu-section" style="flex-grow: 1;">
     <h2>Our Menu</h2>
 
     <div class="menu-container">
 
         <div class="card">
-            <img src="burger.webp">
+            <img src="burger.webp" height="250px">
             <h3>Cheese Burger</h3>
-            <p>₹149</p>
-            <button>Add to Cart</button>
+            
+            <button id="minus1">-</button>
+            <span style="width: 40px; display: inline-block; background-color: white; height: 40px; margin: 0; line-height: 40px;" id="qty1">1</span>
+            <button id="plus1">+</button>
+            <p>Total: ₹<span id="total1">99</span></p>
+            
         </div>
 
         <div class="card">
-            <img src="https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg">
+            <img src="https://simplyhomecooked.com/wp-content/uploads/2023/04/Margherita-Pizza-3.jpg" height="250px">
             <h3>Margherita Pizza</h3>
-            <p>₹199</p>
-            <button>Add to Cart</button>
+            
+            <button id="minus2">-</button>
+            <span style="width: 40px; display: inline-block; background-color: white; height: 40px; margin: 0; line-height: 40px;" id="qty2">1</span>
+            <button id="plus2">+</button>
+            <p>Total: ₹<span id="total2">199</span></p>
         </div>
 
         <div class="card">
-            <img src="pasta.jpg">
+            <img src="pasta.jpg" height="250px">
             <h3>Italian Pasta</h3>
-            <p>₹179</p>
-            <button>Add to Cart</button>
+            
+            <button id="minus3">-</button>
+            <span style="width: 40px; display: inline-block; background-color: white; height: 40px; margin: 0; line-height: 40px;" id="qty3">1</span>
+            <button id="plus3">+</button>
+            <p>Total: ₹<span id="total3">199</span></p>
         </div>
 
         <div class="card">
-            <img src="fries.jpg">
+            <img src="fries.jpg" height="250px">
             <h3>French Fries</h3>
-            <p>₹99</p>
-            <button>Add to Cart</button>
+            
+            <button id="minus4">-</button>
+            <span style="width: 40px; display: inline-block; background-color: white; height: 40px; margin: 0; line-height: 40px;" id="qty4">1</span>
+            <button id="plus4">+</button>
+            <p>Total: ₹<span id="total4">99</span></p>
         </div>
 
     </div>
 </section>
 
-<footer style="margin-top: 210px;">
+<footer>
     <p>© 2025 LOCALS — Fresh Food Delivered</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
